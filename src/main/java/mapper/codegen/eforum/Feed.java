@@ -8,6 +8,8 @@
 
 package mapper.codegen.eforum;
 
+import io.quarkus.runtime.annotations.RegisterForReflection;
+
 import javax.xml.bind.annotation.*;
 import javax.xml.datatype.XMLGregorianCalendar;
 import java.util.ArrayList;
@@ -118,6 +120,7 @@ import java.util.List;
     "entry"
 })
 @XmlRootElement(name = "feed")
+@RegisterForReflection
 public class Feed {
 
     @XmlElement(required = true)
@@ -417,6 +420,7 @@ public class Feed {
         "category",
         "content"
     })
+    @RegisterForReflection
     public static class Entry {
 
         @XmlElement(required = true)
@@ -654,6 +658,7 @@ public class Feed {
         @XmlType(name = "", propOrder = {
             "name"
         })
+        @RegisterForReflection
         public static class Author {
 
             @XmlElement(required = true)
@@ -713,6 +718,7 @@ public class Feed {
             "scheme",
             "label"
         })
+        @RegisterForReflection
         public static class Category {
 
             @XmlElement(required = true)
@@ -821,6 +827,7 @@ public class Feed {
         @XmlType(name = "", propOrder = {
             "value"
         })
+        @RegisterForReflection
         public static class Link {
 
             @XmlValue
@@ -953,6 +960,7 @@ public class Feed {
         @XmlType(name = "", propOrder = {
             "value"
         })
+        @RegisterForReflection
         public static class Summary {
 
             @XmlValue
@@ -1036,6 +1044,7 @@ public class Feed {
     @XmlType(name = "", propOrder = {
         "value"
     })
+    @RegisterForReflection
     public static class Link {
 
         @XmlValue

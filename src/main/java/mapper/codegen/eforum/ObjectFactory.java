@@ -8,6 +8,8 @@
 
 package mapper.codegen.eforum;
 
+import io.quarkus.runtime.annotations.RegisterForReflection;
+
 import javax.xml.bind.annotation.XmlRegistry;
 
 
@@ -26,6 +28,7 @@ import javax.xml.bind.annotation.XmlRegistry;
  * 
  */
 @XmlRegistry
+@RegisterForReflection
 public class ObjectFactory {
 
 
