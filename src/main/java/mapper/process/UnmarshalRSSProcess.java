@@ -11,6 +11,7 @@ import org.slf4j.LoggerFactory;
 import javax.enterprise.context.ApplicationScoped;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -34,7 +35,8 @@ public class UnmarshalRSSProcess {
         try {
             JAXBContext jc = JAXBContext.newInstance(CODEGEN_PACKAGE);
             Unmarshaller unmarshaller = jc.createUnmarshaller();
-            return (Feed) unmarshaller.unmarshal(getClass().getClassLoader().getResourceAsStream("feed.xml"));
+            URL urlForum = new URL(("http://localhost:8080/feed.xml"));
+            return (Feed) unmarshaller.unmarshal(urlForum);
         } catch (Exception e) {
             e.printStackTrace();
         }

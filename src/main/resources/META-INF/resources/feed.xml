@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fr">
+<link rel="self" type="application/atom+xml" href="http://eforum.uem.lan/feed.php" />
+
+<title>eforum</title>
+<link href="http://eforum.uem.lan/index.php" />
+<updated>2019-04-18T11:38:33+02:00</updated>
+
+<author><name><![CDATA[eforum]]></name></author>
+<id>http://eforum.uem.lan/feed.php</id>
+<entry>
+<author><name><![CDATA[cheval]]></name></author>
+<updated>2019-04-18T11:38:33+02:00</updated>
+<published>2019-04-18T11:38:33+02:00</published>
+<id>http://eforum.uem.lan/viewtopic.php?t=2905&amp;p=11262#p11262</id>
+<link href="http://eforum.uem.lan/viewtopic.php?t=2905&amp;p=11262#p11262"/>
+<title type="html"><![CDATA[veille techno • Revue de presse front du 18/04/2019]]></title>
+
+<category term="veille techno" scheme="http://eforum.uem.lan/viewforum.php?f=69" label="veille techno"/>
+<content type="html" xml:base="http://eforum.uem.lan/viewtopic.php?t=2905&amp;p=11262#p11262"><![CDATA[
+Voici le lien vers la revue de presse front de la semaine :
+]]></content>
+</entry>
+</feed>
